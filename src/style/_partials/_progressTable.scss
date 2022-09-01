@@ -1,0 +1,38 @@
+@import "variables";
+
+/* PROGRESS SECTION*/
+.progress-table {
+    display: block;
+    border-collapse: collapse;
+    border: 1px solid $ternary-color;
+    padding: 10px 0;
+    border-radius: 15px;
+    margin-bottom: 60px;
+
+    .light {
+      border: 1px solid $ternary-color-light;
+    }
+
+    tr:nth-child(odd) {
+      color: #f1b80e;
+      text-shadow: 0 0 0.5px #f1b80e;
+    }
+
+    td {
+      padding: 7px 20px;
+      text-align: justify;
+
+      &:nth-child(1) {
+        border-right: 1px solid $ternary-color;
+        vertical-align: top;
+
+        light {
+          border-right: 1px solid $ternary-color-light;
+        }
+      }
+    }
+  }
+  
+ 
+ 
+  

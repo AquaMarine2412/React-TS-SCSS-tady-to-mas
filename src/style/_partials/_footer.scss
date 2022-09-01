@@ -1,0 +1,30 @@
+@import "variables";
+
+/*FOOTER*/
+
+.footer {
+    background: $secondary-color;
+    box-shadow: 0 0 3px black;
+    width: 100vw;
+    border-top: 3px solid white;
+    text-decoration: none;
+    text-align: center;
+    height: 65px;
+
+    .copy {
+      color: $text-color;
+      text-decoration: none;
+      display: inline-block;
+      padding: 20px;
+    }
+    .copy-light {
+      color: $text-color-light;
+    }
+  }
+  
+.footer-light {
+    background: $secondary-color-light;
+  }
+
+  
+  

@@ -1,0 +1,48 @@
+
+.kitten {
+    width: 375px;
+
+}
+
+.cat {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouth {
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    top:42.5%;
+    left:54.5%;
+   
+}
+
+.mouth img {
+    width: 45px;
+}
+
+.head {
+    position: absolute;
+    
+    width: 200px;
+    height: 190px;
+    top:15%;
+    left:34%;
+    cursor: grab;
+    background: rgba(0, 0, 0, 0);
+}
+
+.body {
+    position: absolute;
+    
+    width: 250px;
+    height: 250px;
+    top:48.5%;
+    left:25.5%;
+    cursor: grab;
+    background: rgba(0, 0, 0, 0);
+}
+

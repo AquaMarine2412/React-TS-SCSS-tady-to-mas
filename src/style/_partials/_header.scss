@@ -1,0 +1,166 @@
+@import "variables";
+/*NAV BAR*/
+
+.nav-bar {
+  background: $secondary-color;
+  box-shadow: 0 0 3px black;
+  width: 100vw;
+  border-bottom: 3px solid white;
+  height: 65px;
+  position: fixed;
+  z-index: 1;
+  transition: height 0.2s ease;
+}
+.nav-bar-light {
+  background: $secondary-color-light;
+}
+
+#logo img {
+  width: 75px;
+  position: fixed;
+  left: 5.5%;
+  top: 6.5px;
+  font-family: "Lato";
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+
+/* HAMBURGER MENU ICON*/
+
+
+.ham-ico {
+  top: 31px;
+  transform: translateY(-50%);
+  right: 5.4%;
+  width: 45px;
+  height: 39px;
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  div {
+    background: rgb(255, 255, 255);
+    height: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+  }
+
+  .stick1-ani {
+    position: relative;
+    animation: move1 0.5s forwards;
+    transform: rotate(45deg);
+    transition: transform 1s ease-out;
+    transition-delay: 0.5s;
+    z-index: 2;
+  }
+
+  .stick2-ani {
+    position: relative;
+    transform: rotate(135deg);
+    transition: all 1s ease-out;
+    transition-delay: 0.5s;
+    z-index: 3;
+    box-shadow: none!important;
+  }
+
+  .stick3-ani {
+    position: relative;
+    animation: move3 0.5s forwards;
+    transform: rotate(135deg);
+    transition: transform 1s ease-out;
+    transition-delay: 0.5s;
+    z-index: 1;
+  } 
+}
+
+@keyframes move1 {
+  from {top: 0%}
+  to {top: 25%}
+}
+
+@keyframes move3 {
+  from {top: 0%}
+  to {top: -30%}
+}
+
+/* MENU */
+.menu-main ul {
+  list-style-type: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%);
+  opacity: 0;
+
+  li {
+    margin-top: 8px;
+    text-shadow: 0 0 1.1px #000000;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+    }
+  }
+}
+
+.o-webu-btn {
+  color: $primary-color!important;
+  text-shadow: none;
+}
+
+.o-webu-btn-light {
+  color: $primary-color-light!important;
+}
+/*DARK MODE SWITCH*/
+
+.dark-mode-btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 5%;
+  top: 82px;
+  height: 30px;
+  width: 50px;
+  padding-top: 0.5px;
+  background: #fff;
+  border: 3px solid $secondary-color;
+  border-radius: 150px;  
+  cursor: pointer;
+  z-index: 2;
+  transition: top 5 ease-in;
+  opacity: 0;
+
+  .dark-mode-switch{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    background: #000;
+    border-radius: 100px;
+    transition: right 0.2s ease;
+    z-index: 2;
+  }
+}
+
+.dark-mode-btn-light {
+  background: #000;
+  border: 3px solid $secondary-color-light;
+  border-radius: 110px;
+  height: 30.5px;
+
+  .dark-mode-switch-light {
+    background: #fff;
+    border-radius: 150px;
+    height:19.5px;
+    width: 19.5px;
+  }
+}
+
+
+
