@@ -8,7 +8,9 @@ const Hero = (props: HeroProps) => {
   return (
     <section id="home-ref" className="hero">
 
-      <h1 className={props.darkMode ? "hero-title" : "hero-title hero-title-light"}>Tady <span>To Máš!</span></h1>
+      <h1 className={props.darkMode ? "hero-title" : "hero-title hero-title-light"}>
+        Tady <span>To Máš!</span>
+      </h1>
     
     </section>
   )

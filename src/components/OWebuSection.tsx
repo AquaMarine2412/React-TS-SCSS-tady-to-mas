@@ -1,5 +1,4 @@
 import React from 'react'
-import ProgressTable from './ProgressTable'
 
 const OWebuSection = () => {
   return (
@@ -9,9 +8,8 @@ const OWebuSection = () => {
 
       <article className="welcome"></article>
 
-      <p>Tento web slouží pro osobní účely a jako prezentace mých schopností. Čili zatím zde najdeš pouze krátké updaty mého progresu a několik projektů v portfoliu.</p>
+      <p>Tento web slouží pro osobní účely a projekty v nich pouze jako prezentace mých developerských schopností. Čili najdeš zde krátké updaty mého progresu a několik projektů v portfoliu.</p>
 
-  
       <h4>Progress:</h4>
  
     </section>

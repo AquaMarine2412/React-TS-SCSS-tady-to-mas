@@ -1,5 +1,5 @@
 import React from 'react'
-import progressData from './progressData'
+import progressData from "../dataProgress"
 
 type ProgressProps = {
   darkMode: boolean
@@ -18,7 +18,7 @@ const ProgressTable = (props: ProgressProps) => {
     <section>
       <table className = {props.darkMode? "progress-table" : "progress-table light"}>
         <tbody>
-        {progressItems}
+          {progressItems}
         </tbody>
       </table>
     </section>

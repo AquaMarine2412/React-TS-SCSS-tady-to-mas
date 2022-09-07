@@ -1,6 +1,5 @@
-import { keyboard } from '@testing-library/user-event/dist/keyboard'
 import React from 'react'
-import portfolioData from "./portfolioData"
+import portfolioData from "../dataPortfolio"
 
 const PortfolioSection = () => {
 
@@ -18,7 +17,6 @@ const PortfolioSection = () => {
       )
     )
 
-  
   return (
     <section className="portfolio">
       

@@ -8,7 +8,7 @@ import PortfolioSection from './components/PortfolioSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
-function App() {
+const App = () => {
 
   const [darkMode, setDarkMode] = useState(true)
 

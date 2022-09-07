@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import emailjs from "emailjs-com"
 
 const ContactForm = () => {
@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   const [isSent, setIsSent] = useState(false)
 
-  function handleChange(e: { target: { name: any; value: any } }){
+  function handleChange(e: { target: { name: string; value: string } }){
     const {name, value} = e.target
       setFormData(prevFormData => ({
         ...prevFormData,
@@ -21,7 +21,6 @@ const ContactForm = () => {
       }))
 
       setIsSent(false)
-
   }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>){
@@ -34,26 +33,33 @@ const ContactForm = () => {
       "QciK6HGG5Knq5Br9t"
       ).then(res=>{console.log(res)}).catch(err=>console.log(err))
       
-      e.currentTarget.reset()
+    e.currentTarget.reset()
 
-      setFormData({
-        name: "",
-        email: "",
-        message: ""
-      })
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    })
 
-      setIsSent(true)
+    setIsSent(true)
   }
 
   return (
     <section className="kontakt">
     
-      <h5 className='form' id="kontakt-ref">Napiš mi:</h5>
+      <h5 className='form' 
+          id="kontakt-ref">
+            Napiš mi:
+      </h5>
       
-       <h5 style={{opacity: isSent? "1" : "0"}} className='form-result success'>Email odeslán</h5> 
+      <h5 style={{opacity: isSent? "1" : "0"}} 
+          className='form-result success'>
+            Email odeslán
+      </h5> 
 
-      <form onSubmit={(handleSubmit)} className="contact-form">
-
+      <form onSubmit={(handleSubmit)} 
+            className="contact-form"
+      >
         <input 
           type="text" 
           name="name" 
@@ -62,7 +68,6 @@ const ContactForm = () => {
           onChange={handleChange}
           required
         />
-          
         <input 
           type="email" 
           name="email" 
@@ -71,14 +76,12 @@ const ContactForm = () => {
           onChange={handleChange}
           required
         />
-
         <textarea 
           name="message"   
           onChange={handleChange}
           value={formData.message}
           required
         />
-          
         <button>Odeslat</button>
       </form>
     </section>
